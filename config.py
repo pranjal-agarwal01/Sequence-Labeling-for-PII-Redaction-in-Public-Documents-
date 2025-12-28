@@ -1,0 +1,9 @@
+MODEL_NAME = "bert-base-multilingual-cased"
+MAX_LENGTH = 256                 # reduce for speed
+BATCH_SIZE_PREPROCESS = 1024     # CPU batch
+BATCH_SIZE_TRAIN = 8             # GPU batch
+EPOCHS = 3                       # adjust later
+LR = 2e-5
+OUTPUT_DATASET = "data/processed/pii_tokenized"
+MODEL_OUT = "models/pii_model"
+NUM_PROC = 8                     # CPU cores
